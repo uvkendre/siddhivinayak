@@ -1,16 +1,39 @@
 import React from "react";
 
 const profiles = [
-  { name: "Home", path: "/home", img: "https://api.dicebear.com/7.x/avataaars/svg?seed=home&backgroundColor=0b84f3" },
-  { name: "About Us", path: "/about", img: "https://api.dicebear.com/7.x/avataaars/svg?seed=about&backgroundColor=f39c12" },
-  { name: "Services", path: "/services", img: "https://api.dicebear.com/7.x/avataaars/svg?seed=services&backgroundColor=27ae60" },
-  { name: "Products", path: "/products", img: "https://api.dicebear.com/7.x/avataaars/svg?seed=products&backgroundColor=8e44ad" },
-  { name: "Clients", path: "/clients", img: "https://api.dicebear.com/7.x/avataaars/svg?seed=clients&backgroundColor=e74c3c" },
-  { name: "Contact", path: "/contact", img: "https://api.dicebear.com/7.x/avataaars/svg?seed=contact&backgroundColor=2ecc71" },
+  {
+    name: "Home",
+    path: "/home",
+    img: "https://api.dicebear.com/7.x/avataaars/svg?seed=home&backgroundColor=0b84f3",
+  },
+  {
+    name: "About Us",
+    path: "/about",
+    img: "https://api.dicebear.com/7.x/avataaars/svg?seed=about&backgroundColor=f39c12",
+  },
+  {
+    name: "Services",
+    path: "/services",
+    img: "https://api.dicebear.com/7.x/avataaars/svg?seed=services&backgroundColor=27ae60",
+  },
+  {
+    name: "Products",
+    path: "/products",
+    img: "https://api.dicebear.com/7.x/avataaars/svg?seed=products&backgroundColor=8e44ad",
+  },
+  {
+    name: "Clients",
+    path: "/clients",
+    img: "https://api.dicebear.com/7.x/avataaars/svg?seed=clients&backgroundColor=e74c3c",
+  },
+  {
+    name: "Contact",
+    path: "/contact",
+    img: "https://api.dicebear.com/7.x/avataaars/svg?seed=contact&backgroundColor=2ecc71",
+  },
 ];
 
 const Profiles = () => {
-
   return (
     <div
       className="min-h-screen relative overflow-hidden"
