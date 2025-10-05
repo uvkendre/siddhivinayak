@@ -1,40 +1,15 @@
-import React, { useMemo } from "react";
-import { loadAssetImages } from "../utils/images";
+import React from "react";
+
+const profiles = [
+  { name: "Home", path: "/home", img: "https://api.dicebear.com/7.x/avataaars/svg?seed=home&backgroundColor=0b84f3" },
+  { name: "About Us", path: "/about", img: "https://api.dicebear.com/7.x/avataaars/svg?seed=about&backgroundColor=f39c12" },
+  { name: "Services", path: "/services", img: "https://api.dicebear.com/7.x/avataaars/svg?seed=services&backgroundColor=27ae60" },
+  { name: "Products", path: "/products", img: "https://api.dicebear.com/7.x/avataaars/svg?seed=products&backgroundColor=8e44ad" },
+  { name: "Clients", path: "/clients", img: "https://api.dicebear.com/7.x/avataaars/svg?seed=clients&backgroundColor=e74c3c" },
+  { name: "Contact", path: "/contact", img: "https://api.dicebear.com/7.x/avataaars/svg?seed=contact&backgroundColor=2ecc71" },
+];
 
 const Profiles = () => {
-  const { category1, category2 } = useMemo(() => loadAssetImages(), []);
-  const localProfiles = [
-    {
-      name: "Home",
-      path: "/home",
-      img: category1[0]?.src || category2[0]?.src,
-    },
-    {
-      name: "About Us",
-      path: "/about",
-      img: category1[3]?.src || category2[2]?.src,
-    },
-    {
-      name: "Services",
-      path: "/services",
-      img: category1[6]?.src || category2[4]?.src,
-    },
-    {
-      name: "Products",
-      path: "/products",
-      img: category2[1]?.src || category1[5]?.src,
-    },
-    {
-      name: "Clients",
-      path: "/clients",
-      img: category2[8]?.src || category1[4]?.src,
-    },
-    {
-      name: "Contact",
-      path: "/contact",
-      img: category2[6]?.src || category1[2]?.src,
-    },
-  ];
 
   return (
     <div
@@ -60,7 +35,7 @@ const Profiles = () => {
         </p>
 
         <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-6">
-          {localProfiles.map((p) => (
+          {profiles.map((p) => (
             <a
               key={p.path}
               href={p.path}
